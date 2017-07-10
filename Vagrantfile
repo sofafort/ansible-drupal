@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  BOX = ENV.fetch('BOX', 'ubuntu-14.04')
+  BOX = ENV.fetch('BOX', 'centos/6')
   config.vm.box = BOX 
 
   config.vm.provider "virtualbox" do |v|
